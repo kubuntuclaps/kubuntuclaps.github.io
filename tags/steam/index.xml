@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>steam on kubuntuclaps blog</title>
+    <link>/tags/steam/</link>
+    <description>Recent content in steam on kubuntuclaps blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/steam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cracking series #2: Steam games</title>
+      <link>/2022/04/10/cracking-series-2/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/2022/04/10/cracking-series-2/</guid>
+      <description>Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea&amp;hellip;
+I had bought the game on steam, so why not crack the steam version? Don&amp;rsquo;t waste any more time and let&amp;rsquo;s get started.
+Files I created a copy outside of steamapps folder (in case of something bad happens) and closed my steam session.</description>
+    </item>
+    
+  </channel>
+</rss>

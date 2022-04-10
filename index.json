@@ -9,6 +9,16 @@
   
   
     {
+      "id": "/2022/04/10/cracking-series-2/",
+      "title": "Cracking series #2: Steam games",
+      "content_text": "Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea\u0026hellip;\nI had bought the game on steam, so why not crack the steam version? Don\u0026rsquo;t waste any more time and let\u0026rsquo;s get started.\nFiles I created a copy outside of steamapps folder (in case of something bad happens) and closed my steam session.",
+      "url": "/2022/04/10/cracking-series-2/",
+      "date_published": "2022-04-10 00:00:00 +0000 UTC",
+      "tags": ["cracking,reversing,asm,ida,debugger,steam"]
+    }
+  
+  , 
+    {
       "id": "/2022/04/10/cracking-series-1/",
       "title": "Cracking series #1: CD protected games",
       "content_text": "Hello! Welcome to my first post, im very excited about it so let\u0026rsquo;s start.\nI was playing some videogames when i got curious of how games are cracked, then i downloaded an old game from my childhood\u0026hellip; Sonic Adventure DX.\nLet\u0026rsquo;s dig into it. I downloaded the disc version from The Seven Seas website that is blocked for a lot of ISPs, after installing it without the DEVIANCE crack, i go into the game folder and find two .",

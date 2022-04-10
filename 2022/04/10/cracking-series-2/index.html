@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cracking series #2: Steam games | kubuntuclaps blog</title>
+  <link rel="stylesheet" href="/assets/css/post.css" />
+  <script defer src="/assets/js/lbox.js"></script>
+  
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+  <a class="site-title" href="/">kubuntuclaps blog</a>
+</header>
+
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">Cracking series #2: Steam games</h2>
+          <small class="date">Sun Apr 10, 2022</small>
+          <div class="tags">
+            
+            <a href="/tags/cracking" class="tag">cracking</a>
+            
+            <a href="/tags/reversing" class="tag">reversing</a>
+            
+            <a href="/tags/asm" class="tag">asm</a>
+            
+            <a href="/tags/ida" class="tag">ida</a>
+            
+            <a href="/tags/debugger" class="tag">debugger</a>
+            
+            <a href="/tags/steam" class="tag">steam</a>
+            
+          </div>
+        </div>
+        <div class="content"><p>Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea&hellip;</p>
+<p>I had bought the game on steam, so why not crack the steam version? Don&rsquo;t waste any more time and let&rsquo;s get started.</p>
+<h1 id="files">Files</h1>
+<p>I created a copy outside of steamapps folder (in case of something bad happens) and closed my steam session. We have 2 EXEs again, AppLauncher.exe and Sonic Adventure DX.exe.</p>
+<p>When you try to open one of these it will open steam and (in the case of you dont have bought the game) redirects you to the steam store to purchase the game&hellip;</p>
+<p>Well, if you ever downloaded a cracked game, you know that steam has a API that gives developers some functions like archivements, multiplayer, and this protection (which is actually bad and we&rsquo;ll talk later about it). That&rsquo;s steam_api.dll</p>
+<p><img src="/assets/img/cracking-series-2/sonic_files.png" alt=""></p>
+<p>We can talk about do difficult things like Steam API emulation but let&rsquo;s dig into the basic reverse engineering process.</p>
+<h1 id="reversing-applauncherexe">Reversing AppLauncher.exe</h1>
+<p>Like before in this file we do not have any kind of EXE alteration so we can read the asssembly code as always.</p>
+<p>We find a WinMain function that by the name we can understand that&rsquo;s the one which creates the configuration window. I set some breakpoints in things that seems interesting and start debugging.</p>
+<p><img src="/assets/img/cracking-series-2/launcher_graph.png" alt=""></p>
+<p>When hitting the SteamManager breakpoint, steam opens up and tells you to buy the game&hellip; Hmm interesting, let&rsquo;s JUMP directly into the other function and see what happens.</p>
+<p><img src="/assets/img/cracking-series-2/launcher_video.gif" alt=""></p>
+<p>Boom!! Now we can open game&rsquo;s launcher without steam! But let&rsquo;s not sing victory like last time XD.</p>
+<p>Let&rsquo;s take a closer look at the other file (Sonic Adventure DX.exe) and the most important because is the game itself&hellip;</p>
+<h1 id="reversing-sonic-adventure-dxexe">Reversing Sonic Adventure DX.exe</h1>
+<p>Opening in IDA and waiting for the auto analysis we found this.</p>
+<p><img src="/assets/img/cracking-series-2/sonic_graph.png" alt=""></p>
+<p>Again we found a WinMain function with some interesting code, like checking if another game of Dreamcast Collection (to which this game belongs). But as we know how steam works, let&rsquo;s search for SteamManager in strings.</p>
+<p><img src="/assets/img/cracking-series-2/sonic_steammanager.png" alt=""></p>
+<p>After following some XREFs, we finally find where this function is being used&hellip; So let&rsquo;s analyze the flow of both references.</p>
+<p><img src="/assets/img/cracking-series-2/sonic_first_xref.png" alt=""></p>
+<p>In the first reference, we can find a conditional jump that separates the part when SteamManager is called (so game checks if you have the game) and the rest of code.</p>
+<p><img src="/assets/img/cracking-series-2/sonic_second_xref.png" alt=""></p>
+<p>Again we see the same stuff, so let&rsquo;s change it to a normal JUMP and set some breakpoints&hellip;</p>
+<p><img src="/assets/img/cracking-series-2/sonic_video.gif" alt=""></p>
+<p>Yaay!! We successfully cracked our first game, it&rsquo;s working without steam.</p>
+<h1 id="final-note">Final note</h1>
+<p>I&rsquo;m very surprised about game developers doesn&rsquo;t use more protection like packing, anti-debugging and a large etcetera in the main EXE. In the next episode, i will teach you how to crack a lot of steam games with a simple step&hellip; Stay tuned.</p>
+</div>
+      </section>
+      <footer>
+  <p>&copy; 2022 </p>
+</footer>
+
+    </main>
+  </body>
+</html>
