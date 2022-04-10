@@ -1,4 +1,4 @@
-baseURL = "https://kubuntuclaps.github.io"
+baseURL = "/"
 languageCode = "en-us"
 title = "kubuntuclaps blog"
 rssLimit = 20
