@@ -42,6 +42,8 @@ Well, don't worry, let's try with another game...
 
 My friend, [Migu](https://github.com/migu-star) has purchased the game, so using Steam's family option he can lend me the game... After downloading it and removing game access from my account, let's try this
 
+It is worth noting that if the game does not have this file (as is the case with scrap mechanic), you can create it and try to run it.
+
 ![](/assets/img/cracking-series-3/scrap_mechanic_spoof.png)
 
 Nice!! I can open the game and this time is fully playable (at least as far as I've tested)
