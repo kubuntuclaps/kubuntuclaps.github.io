@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cracking series #3: Steam multiplayer crack | kubuntuclaps blog</title>
+  <link rel="stylesheet" href="/assets/css/post.css" />
+  <script defer src="/assets/js/lbox.js"></script>
+  
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+  <a class="site-title" href="/">kubuntuclaps blog</a>
+</header>
+
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">Cracking series #3: Steam multiplayer crack</h2>
+          <small class="date">Sun Apr 10, 2022</small>
+          <div class="tags">
+            
+            <a href="/tags/cracking" class="tag">cracking</a>
+            
+            <a href="/tags/reversing" class="tag">reversing</a>
+            
+            <a href="/tags/asm" class="tag">asm</a>
+            
+            <a href="/tags/ida" class="tag">ida</a>
+            
+            <a href="/tags/debugger" class="tag">debugger</a>
+            
+            <a href="/tags/steam" class="tag">steam</a>
+            
+            <a href="/tags/multiplayer" class="tag">multiplayer</a>
+            
+          </div>
+        </div>
+        <div class="content"><p>Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing.</p>
+<h1 id="lets-get-started">Let&rsquo;s get started</h1>
+<p>Well, i downloaded Sonic Generations from our seven seas website, and i see the crack is a .DLL file (steam_api.dll) which 1337 people archieve the way of emulate it (and get online functions)&hellip;</p>
+<p>How the file works? In a simple way, it emulates steam and spoofs the GameID which is a number to identify the game XD and spoofs it into Spacewar. And you will ask, What is Spacewar?</p>
+<p><img src="/assets/img/cracking-series-3/spacewar.jpg" alt=""></p>
+<p>This is Spacewar, a hidden steam demo for game developers that everyone has access. So crackers find the way with a custom DLL to recreate all the steam api.</p>
+<p>Well as you can see on my other posts, i have a low knowledge in reversing, asm and C so i can&rsquo;t explain to you how&hellip; Wait, what if i say you i found a way to do the same without the DLL, You cant believe me right?</p>
+<h1 id="reversing-sonic-generations">Reversing Sonic Generations</h1>
+<p>Firing up IDA and doing some reversing, i can&rsquo;t find our SteamManager like the last episode but i found something interesting on the game&rsquo;s folder.</p>
+<p><img src="/assets/img/cracking-series-3/sonic_generations_files.png" alt=""></p>
+<p>A file named steam_appid.txt, let&rsquo;s open it and see what contains&hellip;</p>
+<pre tabindex="0"><code>71340
+</code></pre><p>Interesting, at the moment when i try to open the game, is just opening a empty MessageBox, what happens if i change 71340 (Sonic Generations Steam ID) into 480, Spacewar ones.</p>
+<p><img src="/assets/img/cracking-series-3/sonic_generations_spoof.png" alt=""></p>
+<p>Game is opening and i&rsquo;m playing Spacewar (without altering DLL), well&hellip; too good to be true right? I can&rsquo;t press start and i&rsquo;m stucked in start screen, literally i smashed my keyboard and controller :(</p>
+<p>Well, don&rsquo;t worry, let&rsquo;s try with another game&hellip;</p>
+<h1 id="scrap-mechanic">Scrap Mechanic</h1>
+<p>My friend, <a href="https://github.com/migu-star">Migu</a> has purchased the game, so using Steam&rsquo;s family option he can lend me the game&hellip; After downloading it and removing game access from my account, let&rsquo;s try this</p>
+<p><img src="/assets/img/cracking-series-3/scrap_mechanic_spoof.png" alt=""></p>
+<p>Nice!! I can open the game and this time is fully playable (at least as far as I&rsquo;ve tested)</p>
+<p><img src="/assets/img/cracking-series-3/scrap_mechanic_menu.png" alt=""></p>
+<p>Now let&rsquo;s move on to multiplayer&hellip; I told Migu to create a new steam account and add me into my main, after creating a new room and invite him with the SHIFT + TAB overlay</p>
+<p><img src="/assets/img/cracking-series-3/spacewar_invite.png" alt=""></p>
+<p>And that&rsquo;s, we did it guys!</p>
+<p><img src="/assets/img/cracking-series-3/scrap_mechanic_online.png" alt=""></p>
+<h1 id="closing-statements">Closing statements</h1>
+<p>Reading on google, i found like a <a href="https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/steam_appid.txt">documentation</a> of steamworks, thanks to this i have come to the conclusion that it is a file used by developers for debugging purposes. If you are interested, you can take a look about it. I&rsquo;m not sure if is steam&rsquo;s fault or developers one, but the problem stills here&hellip; Thanks for reading ❤</p>
+</div>
+      </section>
+      <footer>
+  <p>&copy; 2022 </p>
+</footer>
+
+    </main>
+  </body>
+</html>

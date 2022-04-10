@@ -9,6 +9,16 @@
   
   
     {
+      "id": "/2022/04/10/cracking-series-3/",
+      "title": "Cracking series #3: Steam multiplayer crack",
+      "content_text": "Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing.\nLet\u0026rsquo;s get started Well, i downloaded Sonic Generations from our seven seas website, and i see the crack is a .DLL file (steam_api.dll) which 1337 people archieve the way of emulate it (and get online functions)\u0026hellip;\nHow the file works? In a simple way, it emulates steam and spoofs the GameID which is a number to identify the game XD and spoofs it into Spacewar.",
+      "url": "/2022/04/10/cracking-series-3/",
+      "date_published": "2022-04-10 00:00:00 +0000 UTC",
+      "tags": ["cracking,reversing,asm,ida,debugger,steam,multiplayer"]
+    }
+  
+  , 
+    {
       "id": "/2022/04/10/cracking-series-2/",
       "title": "Cracking series #2: Steam games",
       "content_text": "Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea\u0026hellip;\nI had bought the game on steam, so why not crack the steam version? Don\u0026rsquo;t waste any more time and let\u0026rsquo;s get started.\nFiles I created a copy outside of steamapps folder (in case of something bad happens) and closed my steam session.",
