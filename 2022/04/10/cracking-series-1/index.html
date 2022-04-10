@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cracking series #1: CD protected games | kubuntuclaps blog</title>
+  <link rel="stylesheet" href="assets/css/post.css" />
+  <script defer src="assets/js/lbox.js"></script>
+  
+  <link rel="stylesheet" href="assets/css/common.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+  <a class="site-title" href="">kubuntuclaps blog</a>
+</header>
+
+      <section class="article">
+        <div class="article-header">
+          <h2 class="article-title">Cracking series #1: CD protected games</h2>
+          <small class="date">Sun Apr 10, 2022</small>
+          <div class="tags">
+            
+            <a href="tags/cracking" class="tag">cracking</a>
+            
+            <a href="tags/reversing" class="tag">reversing</a>
+            
+            <a href="tags/asm" class="tag">asm</a>
+            
+            <a href="tags/ida" class="tag">ida</a>
+            
+            <a href="tags/debugger" class="tag">debugger</a>
+            
+          </div>
+        </div>
+        <div class="content"><p>Hello! Welcome to my first post, im very excited about it so let&rsquo;s start.</p>
+<p>I was playing some videogames when i got curious of how games are cracked, then i downloaded an old game from my childhood&hellip; Sonic Adventure DX.</p>
+<h1 id="lets-dig-into-it">Let&rsquo;s dig into it.</h1>
+<p>I downloaded the disc version from The Seven Seas website that is blocked for a lot of ISPs, after installing it without the DEVIANCE crack, i go into the game folder and find two .EXEs: autorun.exe and sonic.exe</p>
+<p>Autorun executable gives you the choice of editing settings like game&rsquo;s language, display settings, and all these things. When you press play, checks if you have the game cd, otherwise it gives you an error.</p>
+<p><img src="/assets/img/cracking-series-1/autorun_error.png" alt=""></p>
+<p>Fine, let&rsquo;s do some reversing.</p>
+<h1 id="reversing-autorunexe">Reversing autorun.exe</h1>
+<p>We know sonic.exe is the game, so searching on IDA strings the executable name and following the XREF we find something interesting.</p>
+<p><img src="/assets/img/cracking-series-1/autorun_graph.png" alt=""></p>
+<p>Interesting, we can see first conditional jump that separates our sonic.exe between something else.</p>
+<p><img src="/assets/img/cracking-series-1/autorun_block.png" alt=""></p>
+<p>So what&rsquo;s happens if i change that <strong>JNZ</strong> for a <strong>JUMP</strong>&hellip;</p>
+<p><img src="/assets/img/cracking-series-1/autorun_video.gif" alt=""></p>
+<p>Voila! we successfully patched the inital exe of game (now the error is from sonic.exe)</p>
+<h1 id="reversing-sonicexe">Reversing sonic.exe</h1>
+<p>As you know, i&rsquo;m a beginner in reverse engineering so i wasn&rsquo;t able to crack this game due to the &ldquo;high&rdquo; security that have (SecuROM) and anti-debugging techniques.</p>
+<h1 id="to-finish">To finish</h1>
+<p>Here a diagram of the files</p>
+<p><img src="/assets/img/cracking-series-1/sonic_files.png" alt=""></p>
+<p>I wasn&rsquo;t able to totally crack the game but&hellip; we learned something new! Not always in life we got what expect. Don&rsquo;t worry, in the next episode we will try to crack the same game but the steam version. Maybe this time i will be successful.</p>
+<p>Special mention to my friend <a href="https://github.com/eternidades">Eternity</a>, he helped me with IDA shortcuts, usage of x32dbg, and i really appreciate.</p>
+<p>Thanks for reading! ❤</p>
+</div>
+      </section>
+      <footer>
+  <p>&copy; 2022 </p>
+</footer>
+
+    </main>
+  </body>
+</html>
