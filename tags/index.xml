@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on kubuntuclaps blog</title>
-    <link>https://kubuntuclaps.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on kubuntuclaps blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kubuntuclaps.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>asm</title>
-      <link>https://kubuntuclaps.github.io/tags/asm/</link>
+      <link>/tags/asm/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kubuntuclaps.github.io/tags/asm/</guid>
+      <guid>/tags/asm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cracking</title>
-      <link>https://kubuntuclaps.github.io/tags/cracking/</link>
+      <link>/tags/cracking/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kubuntuclaps.github.io/tags/cracking/</guid>
+      <guid>/tags/cracking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>debugger</title>
-      <link>https://kubuntuclaps.github.io/tags/debugger/</link>
+      <link>/tags/debugger/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kubuntuclaps.github.io/tags/debugger/</guid>
+      <guid>/tags/debugger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ida</title>
-      <link>https://kubuntuclaps.github.io/tags/ida/</link>
+      <link>/tags/ida/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kubuntuclaps.github.io/tags/ida/</guid>
+      <guid>/tags/ida/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reversing</title>
-      <link>https://kubuntuclaps.github.io/tags/reversing/</link>
+      <link>/tags/reversing/</link>
       <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kubuntuclaps.github.io/tags/reversing/</guid>
+      <guid>/tags/reversing/</guid>
       <description></description>
     </item>
     

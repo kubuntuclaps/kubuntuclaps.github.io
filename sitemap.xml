@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kubuntuclaps.github.io/tags/asm/</loc>
+    <loc>/tags/asm/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/tags/cracking/</loc>
+    <loc>/tags/cracking/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/2022/04/10/cracking-series-1/</loc>
+    <loc>/2022/04/10/cracking-series-1/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/tags/debugger/</loc>
+    <loc>/tags/debugger/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/tags/ida/</loc>
+    <loc>/tags/ida/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/tags/reversing/</loc>
+    <loc>/tags/reversing/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2022-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kubuntuclaps.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
