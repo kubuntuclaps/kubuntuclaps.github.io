@@ -1,5 +1,5 @@
 ---
-title: "Cracking series #3: Steam multiplayer crack"
+title: "Cracking series #3: Steam multiplayer"
 date: 2022-04-10
 tags: ["cracking", "reversing", "asm", "ida", "debugger", "steam", "multiplayer"]
 ---
