@@ -1,18 +1,18 @@
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "kubuntuclaps blog",
-  "home_page_url": "",
-  "feed_url": "/",
+  "home_page_url": "https://kubuntuclaps.github.io",
+  "feed_url": "https://kubuntuclaps.github.io/",
 
 
   "items": [
   
   
     {
-      "id": "/2022/04/10/cracking-series-1/",
+      "id": "https://kubuntuclaps.github.io/2022/04/10/cracking-series-1/",
       "title": "Cracking series #1: CD protected games",
       "content_text": "Hello! Welcome to my first post, im very excited about it so let\u0026rsquo;s start.\nI was playing some videogames when i got curious of how games are cracked, then i downloaded an old game from my childhood\u0026hellip; Sonic Adventure DX.\nLet\u0026rsquo;s dig into it. I downloaded the disc version from The Seven Seas website that is blocked for a lot of ISPs, after installing it without the DEVIANCE crack, i go into the game folder and find two .",
-      "url": "/2022/04/10/cracking-series-1/",
+      "url": "https://kubuntuclaps.github.io/2022/04/10/cracking-series-1/",
       "date_published": "2022-04-10 00:00:00 +0000 UTC",
       "tags": ["cracking,reversing,asm,ida,debugger"]
     }
