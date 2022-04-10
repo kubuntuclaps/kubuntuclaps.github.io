@@ -1,13 +1,10 @@
-baseURL = "/hugo-theme-serial-programmer/"
 languageCode = "en-us"
-title = "Hugo Serial Programmer"
+title = "kubuntuclaps blog"
 rssLimit = 20
-copyright = "2021 Janne Kemppainen All rights reserved"
 minify = false
 
 [Author]
-  name = "sharadcodes"
-  email = "me@example.com"
+  name = "kubuntuclaps"
 
 [permalinks]
   posts = "/:year/:month/:day/:filename"
