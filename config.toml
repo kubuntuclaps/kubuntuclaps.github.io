@@ -4,6 +4,10 @@ title = "kubuntuclaps blog"
 rssLimit = 20
 minify = false
 
+[params]
+  twitter_cards = true
+  images = ["assets/img/preview.png"]
+
 [Author]
   name = "kubuntuclaps"
 

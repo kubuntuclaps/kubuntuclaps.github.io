@@ -4,14 +4,12 @@ description: "
   <p>
     A personal blog when i will write when i have some free time.
   </p>
-  <br/>
-  <p>
-  You should join my <a href='https://discord.gg/MKVr5DunmQ' target='_blank'>Discord</a>
-  </P>
 "
-email: dev_sharad@outlook.com
+email: kubuntuclaps@protonmail.com
 contact:
   - title: github
     url: https://github.com/kubuntuclaps
   - title: twitter
     url: https://twitter.com/kubuntuclaps
+  - title: discord
+    url: https://discord.gg/MKVr5DunmQ
