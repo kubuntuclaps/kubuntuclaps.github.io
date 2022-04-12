@@ -2,6 +2,7 @@
 title: "Cracking series #2: Steam games"
 date: 2022-04-10
 tags: ["cracking", "reversing", "asm", "ida", "debugger", "steam"]
+description: "Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea..."
 ---
 
 Hi! In the previous chapter we tried to crack a CD protected game, which i failed in the attempt so, i really wanted to crack myself this game so i had a good idea...

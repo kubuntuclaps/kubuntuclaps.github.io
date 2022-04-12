@@ -2,6 +2,7 @@
 title: "Cracking series #1: CD protected games"
 date: 2022-04-10
 tags: ["cracking", "reversing", "asm", "ida", "debugger"]
+description: "Hello! Welcome to my first post, im very excited about it so let's start."
 ---
 
 Hello! Welcome to my first post, im very excited about it so let's start.

@@ -2,6 +2,7 @@
 title: "Cracking series #3: Steam multiplayer"
 date: 2022-04-10
 tags: ["cracking", "reversing", "asm", "ida", "debugger", "steam", "multiplayer"]
+description: "Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing."
 ---
 
 Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing.
