@@ -2,10 +2,10 @@
 title: "Cracking series #3: Steam multiplayer"
 date: 2022-04-10
 tags: ["cracking", "reversing", "asm", "ida", "debugger", "steam", "multiplayer"]
-description: "Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing."
+description: "Welcome to the new episode of my cracking series, today we will see how i cracked 50% (approximately) of the steam library with a simple thing."
 ---
 
-Welcome to the new episode of my cracking series, today we will see how i cracked 90% (or even more) of the steam library with a simple thing.
+Welcome to the new episode of my cracking series, today we will see how i cracked 50% (approximately) of the steam library with a simple thing. A lot of games are vulnerable to this.
 
 # Let's get started
 
@@ -61,4 +61,8 @@ And that's, we did it guys!
 
 # Closing statements
 
-Reading on google, i found like a [documentation](https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/steam_appid.txt) of steamworks, thanks to this i have come to the conclusion that it is a file used by developers for debugging purposes. If you are interested, you can take a look about it. I'm not sure if is steam's fault or developers one, but the problem stills here... Thanks for reading ❤
+Reading on google, i found like a [documentation](https://kb.heathenengineering.com/assets/steamworks/learning/core-concepts/steam_appid.txt) of Steamworks, this file is used by Steam API and tells which ID to use. After more researching, i understand why this is not working for every single game and is because of Steamworks is not a DRM (Digital Rights Management) and is the fault of developers, because this file is used for developer testing. 
+
+I don't think I'm going to continue this series anymore because i want to do web stuff, but it has been fun.
+
+Thanks for reading ❤
